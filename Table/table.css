@@ -1,0 +1,19 @@
+.table > table, th, td{
+    border: gray 2px solid;
+  }
+  .table {
+    border-collapse: collapse;
+}
+th{
+  padding: 0 15px;
+  background-color: rgba(194, 153, 233, 0.758);
+}
+td{
+  padding:  0 15px;
+  align-items: center;
+}
+.item_img{
+    width: 200px;
+    height: 100px;
+    /* margin: 0 auto; */
+}
