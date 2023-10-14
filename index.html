@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/Table/table.css">
+    <link rel="stylesheet" href="/main.css">
+    
+    <title>Document</title>
+</head>
+<body>
+  <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <script src="/Table/Table.js"></script>
+
+    <div id="content"></div>
+    
+    <script type="text/babel">
+
+    let mass =[];
+
+    fetch("./data/data.json")
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(value => {
+      mass.push(value);
+    });
+    ReactDOM.render(
+      React.createElement(Table, { items: mass, name: "Автошкола" }),
+      document.getElementById("content")
+    );
+  });
+  // .catch(error => {
+  //   console.log("Error fetching data:", error);
+  // });
+      
+  // https://avtoportal.by/wp-content/uploads/2023/01/voditelskie-prava-kategorii-a.jpg
+    </script>
+    
+</body>
+</html>
