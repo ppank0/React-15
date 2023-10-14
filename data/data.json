@@ -1,0 +1,6 @@
+[
+    { "id": 1,  "category": "A", "price": "800 byn", "image":"motobike.png"},
+    { "id": 2,  "category": "B", "price": "900 byn", "image": "car.png"},
+    { "id": 3,  "category": "D", "price": "900 byn", "image": "bus.png"}
+]
+  
